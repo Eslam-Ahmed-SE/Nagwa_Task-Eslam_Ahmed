@@ -11,5 +11,12 @@ In the project directory, you can run:
 ### start the app
  
 to run use:
+
+
     npm install
+
+
+Then: 
+
+
     node .
