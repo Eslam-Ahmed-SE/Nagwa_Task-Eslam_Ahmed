@@ -1,0 +1,292 @@
+/* Main app style */
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --c-gray-900: #000000;
+    --c-gray-800: #1f1f1f;
+    --c-gray-700: #2e2e2e;
+    --c-gray-600: #313131;
+    --c-gray-500: #969593;
+    --c-gray-400: #a6a6a6;
+    --c-gray-300: #bdbbb7;
+    --c-gray-200: #f1f1f1;
+    --c-gray-100: #ffffff;
+    --c-green-500: #45ffbc;
+    --c-olive-500: #e3ffa8;
+    --b-right-green: #45ff93;
+    --b-wrong-red: #ff5b45;
+    --c-white: var(--c-gray-100);
+    --c-text-primary: var(--c-gray-100);
+    --c-text-secondary: var(--c-gray-200);
+    --c-text-tertiary: var(--c-gray-500);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--c-white);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--c-gray-900);
+}
+
+.mainApp {
+    background-color: var(--c-gray-800);
+    min-height: 85vh;
+    width: 85vw;
+    margin: 4vh 5vw 0 5vw;
+    padding: 3vh;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center
+}
+
+.mainApp .content {
+    min-height: 85vh;
+
+}
+
+.mainApp .splashScreen {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center
+}
+
+.mainApp .splashScreen h1 {
+    padding-top: 30vh;
+    font-size: 2.25em;
+    /* text-align: center; */
+}
+
+.mainApp .splashScreen h2 {
+    color: var(--c-text-secondary);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.mainApp .splashScreen h2 span {
+    color: var(--c-text-tertiary);
+}
+
+.mainApp .splashScreen p {
+    display: block;
+    position: absolute;
+    bottom: 8%;
+}
+
+.mainApp .exitSplash {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    border: 1PX solid var(--c-text-secondary);
+    background-color: transparent;
+    position: absolute;
+    bottom: 7%;
+
+}
+
+.mainApp .exitSplash:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--c-text-secondary);
+    cursor: pointer;
+}
+
+.questionMainContainer {
+    position: relative;
+    min-height: 85vh;
+}
+
+
+.questionMainContainer #questionsSplashScreen {
+    min-height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center
+}
+
+.questionMainContainer .QuestionsItemContaier {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center
+}
+
+.questionMainContainer .QuestionsItemContaier progress {
+    width: 100%;
+    /* background-color: var(--c-olive-500); */
+}
+
+.questionMainContainer .QuestionsItemContaier .questionItem {
+    min-height: 80vh;
+}
+
+.questionMainContainer #questionsSplashScreen div,
+.questionMainContainer .QuestionsItemContaier h2 {
+    padding-top: 30vh;
+    text-align: center;
+}
+
+.questionMainContainer .QuestionsItemContaier .questionItem {
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+}
+
+.questionMainContainer .QuestionsItemContaier .questionItem div {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.questionMainContainer .QuestionsItemContaier h2 {
+    font-size: 1.75em;
+}
+
+.questionMainContainer .QuestionsItemContaier h3 {
+    text-align: center;
+    color: var(--c-text-tertiary);
+    font-size: 2em;
+}
+
+.questionMainContainer .QuestionsItemContaier .navBtns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.questionMainContainer .QuestionsItemContaier .navBtns .checkBtn {
+    background-color: var(--c-gray-600);
+    color: var(--b-right-green);
+}
+
+.questionMainContainer #questionsSplashScreen div h2 {
+    color: var(--c-text-tertiary);
+}
+
+.questionMainContainer .QuestionsItemContaier button {
+    width: 20%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: .95em;
+    border: 1PX solid var(--c-text-secondary);
+    background-color: transparent;
+}
+
+.questionMainContainer #questionsSplashScreen button {
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: 1PX solid var(--c-text-secondary);
+    background-color: transparent;
+    position: absolute;
+    bottom: 2%;
+}
+
+.questionMainContainer #questionsSplashScreen button:hover,
+.questionMainContainer .QuestionsItemContaier button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--c-gray-600);
+    cursor: pointer;
+}
+
+.questionMainContainer .QuestionsItemContaier .rightBtn {
+    background-color: var(--b-right-green);
+}
+
+.questionMainContainer .QuestionsItemContaier .wrongBtn {
+    background-color: var(--b-wrong-red);
+}
+
+.questionMainContainer .QuestionsItemContaier button:disabled {
+    cursor: not-allowed;
+}
+
+
+.questionItem {
+    display: none;
+}
+
+#userProgress,
+#checkBtn,
+#prevBtn,
+#nextBtn {
+    display: none;
+}
+
+.modalBackground {
+    display: none;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: blur(8px); */
+}
+
+.modalCard {
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    width: 40%;
+    height: 20%;
+    top: 25%;
+    left: 30%;
+    background-color: var(--c-gray-600);
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modalCard h1 {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.modalCard h2 {
+    color: var(--c-text-tertiary);
+    margin: 0;
+    text-align: center;
+}
+
+.modalCard .ModalNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 15px;
+}
+
+.modalCard .finishBtn, .modalCard .resetBtn {
+    
+    border-radius: 5px;
+    font-size: .75em;
+    border: 1PX solid var(--c-text-secondary);
+    background-color: transparent;
+    bottom: 15px;
+    
+    width: 10%;
+    height: 25px;
+}
+
+.modalCard .finishBtn:hover, .modalCard .resetBtn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--c-gray-800);
+    cursor: pointer;
+}
