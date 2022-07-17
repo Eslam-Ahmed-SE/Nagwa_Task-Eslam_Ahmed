@@ -1,5 +1,7 @@
 # Nagwa_Task
  
-You need node.js and express.js to run the server
+You need node.js and express.js to run the server.
 
-And you need react to run the client
+You will also need react to run the client.
+
+(Run code attacked in `server` dir and client dir)
