@@ -1,6 +1,6 @@
 # Getting Started with this task
 
-This task was made by eslam ahmed for Nagwa
+This task was made by Eslam Ahmed for Nagwa
 
 ## Links
 
